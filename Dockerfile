@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 COPY app.py .
 COPY pipeline.joblib .
 
-EXPOSE 10000
+EXPOSE 8000
 
 # Start the FastAPI application using the specified port from environment variables
 CMD ["python", "app.py"]

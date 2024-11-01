@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import List
 import joblib
 import uvicorn
+import entropy
 import os
 
 # Определение пути к файлу модели
@@ -44,3 +45,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+

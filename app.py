@@ -2,6 +2,7 @@ from fastapi import FastAPI, Depends
 from pydantic import BaseModel
 from typing import List
 import joblib
+import uvicorn
 import os
 
 # Определение пути к файлу модели

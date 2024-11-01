@@ -10,6 +10,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Копируем исходный код приложения и файл модели
+COPY entropy.py .
 COPY app.py .
 COPY pipeline.joblib .
 

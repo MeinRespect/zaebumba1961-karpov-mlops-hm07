@@ -40,9 +40,7 @@ def predict(request: PasswordsRequest, model=Depends(load_model)):
     return PredictionResponse(prediction=predictions.tolist())
 
 def main():
-    uvicorn.run(app)
+    uvicorn.run(app, port=8000, host='0.0.0.0')
 
 if __name__ == '__main__':
     main()
-
-

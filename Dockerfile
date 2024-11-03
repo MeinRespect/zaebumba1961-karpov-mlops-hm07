@@ -1,4 +1,4 @@
-FROM python:3.10-buster
+FROM --platform=linux/amd64 python:3.10-buster
 
 # Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /app
